@@ -42,7 +42,7 @@ public class TestWithExcel {
 		WebElement retypePassword = driver.findElement(By.xpath("//*[@id=\"tblcrtac\"]/tbody/tr[11]/td[3]/input"));
 
 		tbl.setExcelFile("C:\\Users\\Leona\\eclipse-workspace\\Selenium\\MyExcelData.xlsx", "Sheet1");
-		// int rowCount = tbl.sheet.getLastRowNum() - TableXL.sheet.getFirstRowNum();
+		
 		int i = 0;
 		int j = 0;
 
@@ -51,7 +51,7 @@ public class TestWithExcel {
 		id.sendKeys(tbl.getCellData(i, 1));
 		password.sendKeys(tbl.getCellData(i, 2));
 		retypePassword.sendKeys(tbl.getCellData(i, 3));
-		// https://github.com/OlgaVoyloshnikova-87988/SeleniumAgileITech.git
+		
 	}
 
 	@AfterClass
