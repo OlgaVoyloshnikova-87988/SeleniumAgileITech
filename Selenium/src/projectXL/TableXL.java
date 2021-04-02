@@ -36,10 +36,7 @@ public class TableXL {
 		return cell.getStringCellValue();
 	}
 
-//	public int getRowCountInSheet() {
-//		int rowcount = sheet.getLastRowNum() - sheet.getFirstRowNum();
-//		return rowcount;
-//	}
+
 
 	public int cellCount(int rowNum) {
 		int cellcount = sheet.getRow(rowNum).getLastCellNum();
@@ -47,26 +44,4 @@ public class TableXL {
 
 	}
 }
-//}
-//}
-//
-//	public void setCellValue(int rowNum, int cellNum, String cellValue, String excelFilePath) throws IOException {
-//		// creating a new cell in row and setting value to it
-//		sheet.getRow(rowNum).createCell(cellNum).setCellValue(cellValue);
-//
-//		FileOutputStream outputStream = new FileOutputStream(excelFilePath);
-//		wb.write(outputStream);
-//	}
 
-//		FileInputStream fi = new FileInputStream("C:\\Users\\Leona\\Desktop\\MyExcelData");
-//		
-//		XSSFWorkbook wb = new XSSFWorkbook(fi);
-//		Sheet s = wb.getSheet("Sheet0");
-//		Row r1 = s.getRow(0);
-//		Row r2 = s.getRow(1);
-//		Cell c1 = r1.getCell(0);
-//		Cell c11 = r1.getCell(1);
-//		Cell c2 = r1.getCell(0);
-//		Cell c22 = r1.getCell(1);
-//		
-//}
