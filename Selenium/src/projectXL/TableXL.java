@@ -14,8 +14,7 @@ public class TableXL {
 	protected static XSSFSheet sheet;
 	private static XSSFRow row;
 	private static XSSFCell cell;
-	// public static final String excelFilePath =
-	// "C:\\Users\\Leona\\Desktop\\MyExcelData";
+	
 
 	public void setExcelFile(String excelFile, String sheetName) throws IOException {
 		// Create an object of File class to open xlsx file
